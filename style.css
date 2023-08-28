@@ -1,0 +1,258 @@
+
+body, ul {
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    font-family: 'Syne', sans-serif;
+  }
+  
+  /* Top menu */
+  #top-menu {
+    padding: 10px;
+    position: relative;
+  }
+  
+  .top-menu-left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo img {
+    height: 50px;
+  }
+  
+  .wishlist-bag a {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  
+  .menu-divider {
+    border: none;
+    border-top: 1px solid #666;
+    margin: 10px 0;
+  }
+  
+  .top-menu-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .top-menu-list a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+  }
+  
+  /* Sub-menu items */
+  .sub-menu {
+    list-style: none; /* Remove list bullets */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .sub-menu li {
+    margin: 5px 0; /* Add margin to create space between sub-child items */
+    padding: 0;
+  }
+  
+  .sub-menu a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Banner */
+  #banner {
+    margin-top: 10vw;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+  }
+  
+  .orange-box {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 60%;
+    width: 70%;
+    background-color: orange;
+  }
+  
+  #banner p {
+    margin-top: 10vw;
+    font-weight: bold;
+    font-size: 180px;
+    color: white;
+    margin: 0;
+    padding-right: 50vw;
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Contact form */
+  #contact-form {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  #contact-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  #myForm {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  #myForm label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  #myForm input,
+  #myForm textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  #myForm input[type="submit"] {
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  #myForm input[type="submit"]:hover {
+    background-color: #444;
+  }
+  
+  /* Product listing */
+  #products {
+    padding: 20px;
+  }
+  
+  #product-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  #product-list li {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  #product-list img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  
+  
+  /* Small screens (e.g., smartphones) */
+  @media (max-width: 600px) {
+    .top-menu-list {
+      flex-direction: column;
+      list-style: none;
+    }
+    
+    .wishlist-bag {
+      margin-top: 10px;
+    }
+    
+    .menu-divider {
+      display: none;
+    }
+  
+    #banner p {
+      font-size: 100px;
+      padding-right: 0; /* Reset padding */
+    }
+  
+    #banner .orange-box {
+      width: 100%;
+    }
+    
+    #contact-form {
+      padding: 10px;
+    }
+  
+    #myForm {
+      max-width: 100%;
+    }
+  
+    #product-list {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 10px;
+    }
+  }
+  
+  
+@media (max-width: 600px) {
+   
+  }
+  
+  /* Tablets (e.g., iPads) */
+  @media (min-width: 601px) and (max-width: 1024px) {
+    /* Adjustments for tablets */
+    #top-menu {
+      padding: 5px; 
+    }
+  
+    .top-menu-list a {
+      padding: 10px; /* Increase padding for better touch interaction */
+    }
+  
+    #banner p {
+      font-size: 150px; /* Adjust font size */
+    }
+  
+    #banner .orange-box {
+      width: 60%; /* Adjust width */
+    }
+  
+    #product-list {
+      gap: 15px; /* Adjust gap between product items */
+    }
+    
+}
+  
+ 
+  @media (min-width: 1025px) {
+    /* Adjustments for desktops */
+    #top-menu {
+      padding: 20px; /* Increase padding */
+    }
+  
+    .top-menu-list a {
+      padding: 15px 30px; /* Increase padding */
+    }
+  
+    #banner p {
+      font-size: 180px; /* Maintain larger font size */
+    }
+  
+    #banner .orange-box {
+      width: 50%; /* Adjust width */
+    }
+  
+    #product-list {
+      gap: 20px; /* Maintain gap between product items */
+    }
+    
+   
+  }
+    
